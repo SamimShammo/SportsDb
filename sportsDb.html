@@ -13,22 +13,37 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
             }
+            #newCon{
+               
+                margin-bottom: 20px;
+                border: none;
+                
+            }
+            /* .styleSport{ */
+                /* background-color: aqua; */
+                /* padding: 20px;} */
+            .card{
+                border: none;
+                text-align: center;
+            }
         </style>
 </head>
 
 <body>
-    <section>
-        <div id="newCon">
-
-        </div>
+    <section class="container">
+      
         <h1 class="text-danger text-center">Search Team what you want</h1>
         <div class="input-group mb-3 w-50 mx-auto">
             <input id="sportInput" type="text" class="form-control text-dark"
                 placeholder="Search Your Team" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button onclick="getSports()" class="btn btn-outline-primary " type="button" id="sportBtn">Button</button>
+            <button onclick="getSports()" class="btn btn-outline-primary " type="button" id="sportBtn">Search</button>
+           
+        </div>
+        <div id="newCon" class="justify-content-center">
+
         </div>
 
-        <div id="sportsDb">
+        <div id="sportsDb" class="">
             
         </div>
     </section>
